@@ -20,7 +20,7 @@ del /q /f /s "C:\Windows\Logs\*.*" >nul 2>&1
 
 :: Empty recycle bin
 echo Emptying recycle bin...
-PowerShell.exe -NoProfile -Command "Clear-RecycleBin -Force"
+PowerShell.exe -NoProfile -Command "Clear-RecycleBin -Force -ErrorAction SilentlyContinue"
 
 echo Done!
 pause
