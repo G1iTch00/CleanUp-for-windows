@@ -82,7 +82,7 @@ goto main_menu
 :empty_recycle
 echo.
 echo Clearing Recycle Bin...
-Powershell.exe -NoProfile -Comand "Clear-RecycleBin -Force -ErrorAction SilentlyContinue"
+Powershell.exe -NoProfile -Command "Clear-RecycleBin -Force -ErrorAction SilentlyContinue"
 echo Done.
 pause
 goto main_menu
