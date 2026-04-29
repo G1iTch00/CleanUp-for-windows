@@ -56,7 +56,7 @@ goto main_menu
 echo.
 echo Clearing browser cache...
 del /q /f /s "%LOCALAPPDATA%\Google\Chrome\User Data\Default\Cache\*.*" >nul 2>&1
-del /q /f /s "%LOCALAPPDATA%\Google\Microsoft\Edge\User Data\Default\Cache\*.*" >nul 2>&1
+del /q /f /s "%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\Cache\*.*" >nul 2>&1
 echo Done.
 pause 
 goto main_menu
@@ -67,14 +67,6 @@ echo.
 echo Clearing Windows log files...
 del /q /f /s "C:\Windows\Logs\*.*" >nul 2>&1
 echo Done.
-pause
-goto main_menu
-
-:clean_logs
-echo.
-echo Clearing Windows log files...
-del /q /f /s "C:\Windows\logs\*.*" >nul 2>&1
-echo Done. 
 pause
 goto main_menu
 
@@ -116,7 +108,7 @@ goto :eof
 :clean_browser_cache_nopause
 echo Cleaning Browser Cache...
 del /q /f /s "%LOCALAPPDATA%\Google\Chrome\User Data\Default\Cache\*.*" >nul 2>&1
-del /q /f /s "%LOCALAPPDATA%\Google\Microsoft\Edge\User Data\Default\Cache\*.*" >nul 2>&1
+del /q /f /s "%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\Cache\*.*" >nul 2>&1
 goto :eof
 :clean_logs_nopause
 echo Clearing Windows log files...
